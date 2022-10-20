@@ -1,5 +1,7 @@
 package org.example.javaAdvanced;
 
+import org.example.javaAdvanced.io_and_Strings.task2_4.MyClass;
+import org.example.javaAdvanced.io_and_Strings.task3.MyClass_task3;
 import org.example.javaAdvanced.java_Collection_Framework.task2.DoubleValues;
 import org.example.javaAdvanced.java_Collection_Framework.task3.MyClass_1;
 import org.example.javaAdvanced.java_Collection_Framework.task4.MyClass_2;
@@ -71,14 +73,27 @@ public class Main_Advanced {
 
         System.out.println("\n================================================\n");
 
-        /*================java_Collection_Framework================*/
+        /*================IO_and_Strings================*/
+
+        /*Задача № 2*/
+        String nameFile = org.example.javaAdvanced.io_and_Strings.task2_4.MyClass.nameFile;
+        new MyClass().readFile(nameFile);
+        new MyClass().writeFile("Vasy", "Lena");
+        new MyClass().readFile(nameFile);
+
+        System.out.println("\n================================================\n");
+
+        /*Задача № 3*/
+
+        new MyClass_task3("We use both first and third-party cookies to personalise web content used");
+
+
+        System.out.println("\n================================================\n");
+
+
 
         /*================java_Collection_Framework================*/
 
-
-        /*================java_Collection_Framework================*/
-
-        /*================java_Collection_Framework================*/
 
     }
 }
