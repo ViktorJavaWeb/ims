@@ -1,2 +1,3 @@
-package org.example.battleship;public class Moldy {
+package org.example.battleship;
+public class Moldy {
 }

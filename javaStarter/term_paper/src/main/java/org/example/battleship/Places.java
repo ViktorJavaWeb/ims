@@ -58,8 +58,6 @@ public class Places {
             }
             System.out.println();
         }
-
-
     }
 
     void enemyField() {
