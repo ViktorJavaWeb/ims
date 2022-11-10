@@ -1,14 +1,28 @@
 package org.example.javaAdvanced;
 
-import org.example.javaAdvanced.reflection.task2.ReflectionTest1;
-import org.example.javaAdvanced.reflection.task3.ReflectionTest2;
-import org.example.javaAdvanced.reflection.task4.Animal;
-import org.example.javaAdvanced.reflection.task4.Cat;
+import org.example.javaAdvanced.io_and_Strings.task2_4.MyClass;
+import org.example.javaAdvanced.io_and_Strings.task3.MyClass_task3;
+import org.example.javaAdvanced.java_Collection_Framework.task2.DoubleValues;
+import org.example.javaAdvanced.java_Collection_Framework.task3.MyClass_1;
+import org.example.javaAdvanced.java_Collection_Framework.task4.MyClass_2;
+import org.example.javaAdvanced.java_Collection_Framework.task5.MyClass_2_5;
+import org.example.javaAdvanced.reflection.task2.*;
+import org.example.javaAdvanced.reflection.task3.*;
+import org.example.javaAdvanced.reflection.task4.*;
+import org.example.javaAdvanced.regular_expressions_and_Data_API.task2.DecryptorJava;
+import org.example.javaAdvanced.regular_expressions_and_Data_API.task3.MyClassData;
+import org.example.javaAdvanced.regular_expressions_and_Data_API.task4.DaemonThread;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Main_Advanced {
     public static void main(String[] args) throws IOException {
@@ -17,7 +31,7 @@ public class Main_Advanced {
 
         /*Задача № 2*/
 
-      /*  List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         for (int i = 10; i > 0; i--) {
             list.add(i);
         }
@@ -25,7 +39,7 @@ public class Main_Advanced {
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
-        }*/
+        }
 
         System.out.println("\n================================================\n");
 
@@ -34,22 +48,22 @@ public class Main_Advanced {
 
         /*Задача № 2*/
 
-      /*  BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int ind = 5;
         String[] ars = new String[ind];
         for (int i = 0; i < ind; i++) {
             ars[i] = reader.readLine();
         }
-        new DoubleValues(ars);*/
+        new DoubleValues(ars);
 
         System.out.println("\n================================================\n");
 
         /*Задача № 3*/
 
-        /*MyClass_1 myClass_1 = new MyClass_1();
+        MyClass_1 myClass_1 = new MyClass_1();
         LinkedList linkedList = myClass_1.addNumber();
         myClass_1.getMin(linkedList);
-        System.out.println(myClass_1.getMin(linkedList));*/
+        System.out.println(myClass_1.getMin(linkedList));
 
 
         System.out.println("\n================================================\n");
@@ -57,15 +71,15 @@ public class Main_Advanced {
 
         /*Задача № 4*/
 
-        /*new MyClass_2().findFamily("Merlin");
+        new MyClass_2().findFamily("Merlin");
         new MyClass_2().findCity("Київ");
-        new MyClass_2().findCity("Суми");*/
+        new MyClass_2().findCity("Суми");
 
         System.out.println("\n================================================\n");
 
         /*Задача № 5*/
 
-        //new MyClass_2_5();
+        new MyClass_2_5();
 
         System.out.println("\n================================================\n");
 
@@ -73,16 +87,16 @@ public class Main_Advanced {
 
         /*Задача № 2,4 */
 
-       /* String nameFile = org.example.javaAdvanced.io_and_Strings.task2_4.MyClass.nameFile;
+        String nameFile = org.example.javaAdvanced.io_and_Strings.task2_4.MyClass.nameFile;
         new MyClass().readFile(nameFile);
         new MyClass().writeFile("Vasy", "Lena");
-        new MyClass().readFile(nameFile);*/
+        new MyClass().readFile(nameFile);
 
         System.out.println("\n================================================\n");
 
         /*Задача № 3*/
 
-        //new MyClass_task3("We use both first and third-party cookies to personalise web content used");
+        new MyClass_task3("We use both first and third-party cookies to personalise web content used");
 
 
         System.out.println("\n================================================\n");
@@ -93,19 +107,19 @@ public class Main_Advanced {
 
         /*Задача № 2*/
 
-        //new DecryptorJava();
+        new DecryptorJava();
 
         System.out.println("\n================================================\n");
 
         /*Задача № 3*/
 
-        //new MyClassData("30.11.1977");
+        new MyClassData("30.11.1977");
 
         System.out.println("\n================================================\n");
 
         /*Задача № 4*/
 
-        /*DaemonThread daemonThread = new DaemonThread();
+        DaemonThread daemonThread = new DaemonThread();
         daemonThread.setName("DaemonThread");
         daemonThread.setDaemon(true);
         daemonThread.start();
@@ -115,7 +129,6 @@ public class Main_Advanced {
         System.out.println("daemonThread.getPriority() = " + daemonThread.getPriority());
         System.out.println("daemonThread.getThreadGroup() = " + daemonThread.getThreadGroup());
         System.out.println("daemonThread.getStackTrace() = " + daemonThread.getStackTrace());
-*/
 
         System.out.println("\n================================================\n");
 
@@ -123,7 +136,7 @@ public class Main_Advanced {
         /*================Reflection================*/
 
         /*Задача № 2*/
-        /* ReflectionTest1 reflectionTest1 = new ReflectionTest1("Tomy");
+         ReflectionTest1 reflectionTest1 = new ReflectionTest1("Tomy");
 
         try {
             Class<?> tClass = Class.forName("org.example.javaAdvanced.reflection.task2.ReflectionTest1");
@@ -181,14 +194,14 @@ public class Main_Advanced {
             System.out.println("e.getMessage() = " + e.getMessage());
         } catch (NoSuchFieldException e) {
             throw new RuntimeException(e);
-        }*/
+        }
 
 
         System.out.println("\n================================================\n");
 
         /*Задача № 3*/
 
-     /*   ReflectionTest2 reflectionTest2 = new ReflectionTest2("Jury", "Kiev", 23);
+        ReflectionTest2 reflectionTest2 = new ReflectionTest2("Jury", "Kiev", 23);
 
         try {
             Class tClassTest = Class.forName("org.example.javaAdvanced.reflection.task3.ReflectionTest2");
@@ -224,7 +237,7 @@ public class Main_Advanced {
 
         } catch (ClassNotFoundException e) {
             System.out.println("e = " + e.getMessage());
-        }*/
+        }
 
 
         System.out.println("\n================================================\n");
